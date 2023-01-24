@@ -64,6 +64,12 @@ npm start
 
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
+![1](https://user-images.githubusercontent.com/114417361/214316715-7e044eb3-599d-4d0b-a63b-30b940ead4b3.png)
+![2](https://user-images.githubusercontent.com/114417361/214316742-2cfcf0d0-46d0-4561-bc86-7efc9d37bf90.png)
+![3](https://user-images.githubusercontent.com/114417361/214316752-e2aae393-3cf5-420e-a1be-855c8c440ad7.png)
+![4](https://user-images.githubusercontent.com/114417361/214316778-d026a30e-cb02-40ef-8f43-4fba48560f9b.png)
+
+
 
 ## Find a bug?
 If you found an issue or would like to submit an improvement to this project,please subit an issue using the issues tab above. 
