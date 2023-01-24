@@ -1,20 +1,69 @@
-# Cryptocurrency Tracker with React JS, Material UI and Chart JS
 
-## [Watch Full Tutorial on Youtube here](https://youtu.be/QA6oTpMZp84)
+# Cryptoverse-Tracker
+ Cryptoverse app helps you to fetch the price and fluctutaion of trending cryptocurrency!
 
-[![crypto](https://user-images.githubusercontent.com/51760520/136682357-5d269bb9-0e36-4f26-a468-fb2963dd9468.png)](https://youtu.be/QA6oTpMZp84)
 
-## Demo
-#### Here is a working live demo :  https://crypto-hunter.netlify.app/
+## API Reference
 
-## Built with 
+#### Get all items
 
-- [React JS](https://reactjs.org/)
-- [Material UI](https://v4.mui.com/)
-- [Chart JS](https://reactchartjs.github.io/react-chartjs-2/#/)
+```http
+  GET `https://api.coingecko.com/api/v3/coins/markets?vs_currency=${currency}&order=market_cap_desc&per_page=100&page=1&sparkline=false`
+```
 
-## Made with ♥ By [Roadside Coder](https://www.youtube.com/channel/UCIPZVAwDGa-A4ZJxCBvXRuQ)
+| Parameter |  Description                |
+| :-------- |  :------------------------- |
+| `Coin-list` |  To tabulate the coins |
 
-[![Piyush Agarwal](https://avatars1.githubusercontent.com/u/51760520?v=3&s=144)](https://github.com/piyush-eon)
+#### Get item
 
-MIT © [Piyush Agarwal ](https://github.com/piyush-eon)
+```http
+  GET `https://api.coingecko.com/api/v3/coins/${id}`
+```
+
+| Parameter  | Description                       |
+| :--------  | :-------------------------------- |
+| `Coin`     |Information of single Coin |
+
+```http
+  GET `https://api.coingecko.com/api/v3/coins/${id}`
+```
+
+
+## Deployment
+
+To deploy this project run
+
+1.Clone this project
+
+```bash
+  git clone 
+```
+
+2.Open command prompt of the  path where the project is downloaded and Run the project
+```bash
+npm start
+```
+4.If project cannot be deployed in command prompt, open folder in Visual Studio Code.
+
+5.Delete  package-lock.json and node modules if any.
+
+6.Open terminal and Run
+```bash
+npm install  --legacy-peer-deps
+```
+
+```bash
+npm start
+```
+
+
+
+
+## Screenshots
+
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+
+
+## Find a bug?
+If you found an issue or would like to submit an improvement to this project,please subit an issue using the issues tab above. 

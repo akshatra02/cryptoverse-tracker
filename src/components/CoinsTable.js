@@ -35,16 +35,16 @@ export default function CoinsTable() {
 
   const useStyles = makeStyles({
     row: {
-      backgroundColor: "#16171a",
+      backgroundColor: "#16213E",
       cursor: "pointer",
       "&:hover": {
-        backgroundColor: "#131111",
+        backgroundColor: "#205295",
       },
       fontFamily: "Montserrat",
     },
     pagination: {
       "& .MuiPaginationItem-root": {
-        color: "gold",
+        color: "#0386fd",
       },
     },
   });
@@ -93,23 +93,23 @@ export default function CoinsTable() {
           Cryptocurrency Prices by Market Cap
         </Typography>
         <TextField
+          style={{ color:"#0386fd",marginBottom: 20, width: "100%" }}
           label="Search For a Crypto Currency.."
           variant="outlined"
-          style={{ marginBottom: 20, width: "100%" }}
           onChange={(e) => setSearch(e.target.value)}
         />
         <TableContainer component={Paper}>
           {loading ? (
-            <LinearProgress style={{ backgroundColor: "gold" }} />
+            <LinearProgress style={{ backgroundColor: "#0386fd" }} />
           ) : (
             <Table aria-label="simple table">
-              <TableHead style={{ backgroundColor: "#EEBC1D" }}>
+              <TableHead style={{ backgroundColor: "#0386fd" }}>
                 <TableRow>
                   {["Coin", "Price", "24h Change", "Market Cap"].map((head) => (
                     <TableCell
                       style={{
-                        color: "black",
-                        fontWeight: "700",
+                        color: "#16213E",
+                        fontWeight: "1000",
                         fontFamily: "Montserrat",
                       }}
                       key={head}
@@ -195,7 +195,7 @@ export default function CoinsTable() {
         <Pagination
           count={(handleSearch()?.length / 10).toFixed(0)}
           style={{
-            padding: 20,
+            padding: 50,
             width: "100%",
             display: "flex",
             justifyContent: "center",
